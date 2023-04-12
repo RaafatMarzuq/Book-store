@@ -1,0 +1,22 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    
+    height: 50px;
+    background-color: #1a202c;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Navbar-button {
+    margin : 10px ;
+    padding: auto;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px 10px;
+    background-color: transparent;
+    color: white;
+    
+  }
+  
+  
+  

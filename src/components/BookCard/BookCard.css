@@ -1,0 +1,29 @@
+
+.card{
+    height: 175px;
+    width: 100px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.card--image{
+     width: 100%;
+    border-radius: 9px;
+}
+h5{
+
+    margin: auto;
+    padding: auto;
+}
+
+.add-button{
+   
+    padding: auto;
+    height: 30px;
+    width: 90px;
+    border-radius: 10px 200px;
+    background-color: white;
+    color: rgb(51, 43, 43);
+    box-shadow: 5px 5px 5px  blanchedalmond;
+}
