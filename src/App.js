@@ -12,21 +12,14 @@ function App() {
   
   return (
     <>
-    
-    <NavBar/>
-    
-     <BrowserRouter>
-   
-    <Routes>
-            <Route path='/' element ={ <Home  /> } />
-            <Route path='/Books' element ={<Books/>} />
-            <Route path='/Cart' element ={<Cart/>} />
-            
-            
-     </Routes>
-   </BrowserRouter> 
-    
- 
+      <NavBar/>
+      <BrowserRouter>
+          <Routes>
+              <Route path='/' element ={ <Home  /> } />
+              <Route path='/Books' element ={<Books/>} />
+              <Route path='/Cart' element ={<Cart/>} />     
+          </Routes>
+      </BrowserRouter> 
     </>
   );
 }
