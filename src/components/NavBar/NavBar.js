@@ -10,8 +10,8 @@ const NavBar = () => {
       page ==="Home" ?
             window.location.href = 'Book-store/' : 
                  page ==="Book-store/Books" ?
-                  window.location.href = 'Book-store//Books' :
-                     window.location.href = 'Book-store//Cart'
+                  window.location.href = 'Book-store/Books' :
+                     window.location.href = 'Book-store/Cart'
 
     }
   return (
