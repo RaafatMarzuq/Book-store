@@ -8,8 +8,8 @@ import { BsFillHouseFill } from "react-icons/bs";
 const NavBar = () => {
     function onClick(page){
       page ==="Home" ?
-            window.location.href = 'Book-store/' : 
-                 page ==="Book-store/Books" ?
+            window.location.href = '/' : 
+                 page ==="Books" ?
                   window.location.href = 'Book-store/Books' :
                      window.location.href = 'Book-store/Cart'
 
