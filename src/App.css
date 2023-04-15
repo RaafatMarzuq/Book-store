@@ -1,3 +1,8 @@
+
+*{
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
 .App {
   text-align: center;
   background-image: url('../public/image/922671.jpg');
@@ -9,8 +14,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-
 
 
 
