@@ -1,0 +1,30 @@
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+  }
+  
+  ul {
+	display: flex;
+	list-style: none;
+  }
+  
+  li {
+	margin: 0 1rem;
+	
+  }
+  
+  a {
+	color: wheat;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	
+	color: #666;
+  }
+  svg {
+	width: 2rem;
+	height: 2rem;
+  }

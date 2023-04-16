@@ -1,10 +1,10 @@
 .Navbar {
     display: flex;
     align-items: center;
-    
     height: 50px;
     background-color: #1a202c;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
   }
   
   .Navbar-button {
