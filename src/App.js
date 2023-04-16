@@ -15,9 +15,9 @@ function App() {
       <NavBar/>
       <BrowserRouter>
           <Routes>
-              <Route path='Book-store/' element ={ <Home  /> } />
-              <Route path='/Books' element ={<Books/>} />
-              <Route path='/Cart' element ={<Cart/>} />     
+              <Route index element ={ <Home  /> } />
+              <Route path='Books' element ={<Books/>} />
+              <Route path='Cart' element ={<Cart/>} />     
           </Routes>
       </BrowserRouter> 
     </>
