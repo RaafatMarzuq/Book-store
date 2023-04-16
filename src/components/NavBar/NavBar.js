@@ -5,13 +5,15 @@ import './NavBar.css'; // import external CSS file
 import { BiCart ,BiBookBookmark } from "react-icons/bi";
 import { BsFillHouseFill } from "react-icons/bs";
 
+
+
 const NavBar = () => {
     function onClick(page){
       page ==="Home" ?
-            window.location.href = '/' : 
+            window.location.href = '/Book-store/' : 
                  page ==="Books" ?
-                  window.location.href = '/Books' :
-                     window.location.href = '/Cart'
+                  window.location.href = 'Books' :
+                     window.location.href = 'Cart'
 
     }
   return (
@@ -21,7 +23,7 @@ const NavBar = () => {
       <button  className="Navbar-button" onClick={()=>{ onClick("Home") }}>
       <BsFillHouseFill/> Home
       </button>
-
+       
       <button  className="Navbar-button" onClick={()=>{ onClick("Books")}}>
       <BiBookBookmark/> Books
       </button>
