@@ -7,22 +7,22 @@ const Footer = () => {
       <ul>
         <li>
           <a href="https://www.Linkedin.com">
-            <FaLinkedinIn />
+            <FaLinkedinIn className="footer-icon"  />
           </a>
         </li>
         <li>
           <a href="https://github.com/RaafatMarzuq/Book-store">
-            <FaGithub />
+            <FaGithub className="footer-icon"  />
           </a>
         </li>
         <li>
           <a href="https://www.facebook.com">
-            <FaFacebook />
+            <FaFacebook className="footer-icon"  />
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com">
-            <FaInstagram />
+            <FaInstagram className="footer-icon"  />
           </a>
         </li>
        

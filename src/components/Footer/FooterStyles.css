@@ -16,7 +16,7 @@ footer {
   }
   
   a {
-	color: wheat;
+	color: whitesmoke;
 	text-decoration: none;
   }
   
@@ -24,7 +24,7 @@ footer {
 	
 	color: #666;
   }
-  svg {
+  .footer-icon {
 	width: 2rem;
 	height: 2rem;
   }
