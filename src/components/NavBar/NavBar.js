@@ -9,7 +9,7 @@ import { BsFillHouseFill } from "react-icons/bs";
 
 const NavBar = () => {
     function onClick(page){
-     alert(`${process.env.PUBLIC_URL}`)
+    
       page ==="Home" ?
       window.location.replace(`${process.env.PUBLIC_URL}`) : 
                  page ==="Books" ?
