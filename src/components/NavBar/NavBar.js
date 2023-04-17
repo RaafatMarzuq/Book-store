@@ -11,10 +11,10 @@ const NavBar = () => {
     function onClick(page){
     
       page ==="Home" ?
-      window.location.replace(`${process.env.PUBLIC_URL}`) : 
+      window.location.href =`${process.env.PUBLIC_URL}` : 
                  page ==="Books" ?
-                  window.location.replace(`${process.env.PUBLIC_URL}/Books`) :
-                  window.location.replace(`${process.env.PUBLIC_URL}/Cart`)
+                 window.location.href =`${process.env.PUBLIC_URL}/Books` :
+                 window.location.href =`${process.env.PUBLIC_URL}/Cart`
     }
   return (
    
