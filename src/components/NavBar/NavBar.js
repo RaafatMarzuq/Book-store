@@ -13,7 +13,7 @@ const NavBar = () => {
     function onClick(page){
       
       page ==="Home" ?
-            navigate('/'): 
+            navigate('Book-store/'): 
                  page ==="Books" ?
                  navigate('/Books') :
                  navigate('/Cart')
