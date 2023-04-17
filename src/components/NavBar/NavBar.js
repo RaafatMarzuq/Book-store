@@ -1,10 +1,8 @@
 
 import React from 'react';
-import './NavBar.css'; // import external CSS file
-// import Button from '../Button/Button';
+import './NavBar.css'; 
 import { BiCart ,BiBookBookmark } from "react-icons/bi";
 import { BsFillHouseFill } from "react-icons/bs";
-
 
 
 const NavBar = () => {
@@ -21,7 +19,7 @@ const NavBar = () => {
     <div className="Navbar">
      
       <button  className="Navbar-button" onClick={()=>{ onClick("Home") }}>
-      <BsFillHouseFill/> Home
+      <BsFillHouseFill/>  Home
       </button>
        
       <button  className="Navbar-button" onClick={()=>{ onClick("Books")}}>
