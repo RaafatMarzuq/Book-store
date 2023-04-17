@@ -4,20 +4,17 @@ import './NavBar.css'; // import external CSS file
 // import Button from '../Button/Button';
 import { BiCart ,BiBookBookmark } from "react-icons/bi";
 import { BsFillHouseFill } from "react-icons/bs";
-import { useNavigate } from 'react-router-dom';
+
 
 
 const NavBar = () => {
-  const navigate = useNavigate();
-
     function onClick(page){
-      
+     
       page ==="Home" ?
-            navigate('Book-store/'): 
+      window.location.replace(`${process.env.PUBLIC_URL}`) : 
                  page ==="Books" ?
-                 navigate('/Books') :
-                 navigate('/Cart')
-
+                  window.location.replace(`${process.env.PUBLIC_URL}/Books`) :
+                  window.location.replace(`${process.env.PUBLIC_URL}/Cart`)
     }
   return (
    
