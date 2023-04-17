@@ -14,11 +14,11 @@ function App() {
     <>
       <NavBar/>
      <div>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
-              <Route path='/Book-store/' element ={ <Home  /> } />
-              <Route path='/Book-store/Books' element ={<Books/>} />
-              <Route path='/Book-store/Cart' element ={<Cart/>} />     
+              <Route path='/' element ={ <Home  /> } />
+              <Route path='/Books' element ={<Books/>} />
+              <Route path='/Cart' element ={<Cart/>} />     
           </Routes>
       </BrowserRouter> 
      </div>
