@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter,Route ,Routes } from 'react-router-dom';
+import { HashRouter ,Route ,Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Books from './pages/Books/Books';
 import Home from './pages/Home/Home';
@@ -14,16 +14,16 @@ function App() {
     <>
       <NavBar/>
     
-      {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+      <HashRouter  >
           <Routes>
-              <Route exact path= {`${process.env.PUBLIC_URL}/`} element ={ <Home/> } />
-              <Route exact  path={`${process.env.PUBLIC_URL}/Books`} element ={<Books/>} />
-              <Route exact path={`${process.env.PUBLIC_URL}/Cart`} element ={<Cart/>} />     
+              <Route  path='/' element ={ <Home/> } />
+              <Route   path='/Book-store/Books' element ={<Books/>} />
+              <Route  path='/Book-store/Cart' element ={<Cart/>} />     
           </Routes>
-      {/* </BrowserRouter>  */}
-     
+      </HashRouter > 
+    
         <Footer/>
-     
+    
        
     </>
   );
