@@ -6,6 +6,7 @@ import { BsFillHouseFill } from "react-icons/bs";
 
 
 const NavBar = () => {
+  
     function onClick(page){
     
       page ==="Home" ?

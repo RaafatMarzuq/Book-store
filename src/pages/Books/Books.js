@@ -19,7 +19,10 @@ const Books =()=>{
             console.log(err)
         })
     } , [loading])
-    const [savedBooks, setSavedBooks] = useState([])
+    const [savedBooks, setSavedBooks] = useState(
+                                            JSON.parse(localStorage.getItem('sevedBooks')) ? 
+                                            JSON.parse(localStorage.getItem('sevedBooks')):
+                                            [])
     const [flag, setFlag] = useState(false)
    
     useEffect(()=>{
