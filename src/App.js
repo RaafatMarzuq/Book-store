@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <NavBar/>
-     <div>
+    
       {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
           <Routes>
               <Route exact path= {`${process.env.PUBLIC_URL}/`} element ={ <Home/> } />
@@ -21,10 +21,9 @@ function App() {
               <Route exact path={`${process.env.PUBLIC_URL}/Cart`} element ={<Cart/>} />     
           </Routes>
       {/* </BrowserRouter>  */}
-     </div>
-      <div>
+     
         <Footer/>
-      </div>
+     
        
     </>
   );
