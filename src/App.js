@@ -11,17 +11,19 @@ function App() {
   
   
   return (
-    
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <>
       <NavBar/>
+     
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
               <Route  path='/' exact Component={Home}  />
               <Route   path='/Books'  Component={Books}  />
               <Route  path='/Cart'  Component={Cart}  />     
           </Routes>
-      <Footer/>
       </BrowserRouter> 
-   
+     
+      <Footer/>
+    </>
   );
 }
 
