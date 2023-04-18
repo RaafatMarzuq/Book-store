@@ -11,21 +11,21 @@ function App() {
   
   
   return (
-    <>
+     <HashRouter  >
       <NavBar/>
     
-      <HashRouter  >
+     
           <Routes>
               <Route  path='/' element ={ <Home/> } />
               <Route   path='/Book-store/Books' element ={<Books/>} />
               <Route  path='/Book-store/Cart' element ={<Cart/>} />     
           </Routes>
-      </HashRouter > 
+      
     
         <Footer/>
-    
+    </HashRouter > 
        
-    </>
+    
   );
 }
 
