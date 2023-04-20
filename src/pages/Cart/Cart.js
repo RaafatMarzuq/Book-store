@@ -6,7 +6,7 @@ import {useNavigate} from "react-router-dom"
 const Cart =()=>{
       const [storage,setStorage] =useState(JSON.parse(localStorage.getItem('sevedBooks')));
       const navigate = useNavigate();
-      navigate(`${process.env.PUBLIC_URL}/Cart`)
+      navigate(`/Cart`)
 
       // alert(JSON.parse( localStorage.getItem('sevedBooks')))
       
