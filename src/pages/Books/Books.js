@@ -11,7 +11,7 @@ const Books =()=>{
     const [books, setBooks] = useState([])
     const [loading, setLoading] = useState(0)
     const navigate = useNavigate();
-    navigate(`/Books`,{replace : true})
+    navigate(`Books`,{replace : true})
 
     setTimeout(()=> setLoading(loading=> loading+1),1800000000)
 

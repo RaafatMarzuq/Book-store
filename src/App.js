@@ -16,9 +16,9 @@ function App() {
      
       <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
-              <Route  path='/' exact Component={Home}  />
-              <Route   path='/Books'  Component={Books}  />
-              <Route  path='/Cart'  Component={Cart}  />     
+              <Route  path='/'  element={<Home/>}  />
+              <Route   path='Books'  element={<Books/>}  />
+              <Route  path='Cart'  element={<Cart/>}  />     
           </Routes>
       </BrowserRouter> 
      
