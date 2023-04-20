@@ -1,9 +1,13 @@
 import {React ,useState,useEffect }from 'react';
 import BookCard from '../../components/BookCard/BookCard';
 import './Cart.css'
+import {useNavigate} from "react-router-dom"
 
 const Cart =()=>{
       const [storage,setStorage] =useState(JSON.parse(localStorage.getItem('sevedBooks')));
+      const navigate = useNavigate();
+      navigate(`${process.env.PUBLIC_URL}/Cart`)
+
       // alert(JSON.parse( localStorage.getItem('sevedBooks')))
       
       
