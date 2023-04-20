@@ -9,9 +9,9 @@ const BookCard = ({name , price , type, onClick}) => {
       
        
     return (
-        <div className="card">
+        <div className="card" id={`${name}`}>
             <img alt="" src={BookImage} className="card--image"/>
-           <div>
+           <div >
             <h5>{name} </h5>
             <h5>{price}</h5>
             </div>

@@ -3,28 +3,26 @@ import BookCard from '../../components/BookCard/BookCard';
 import  { useState, useEffect } from 'react'
 import axios from 'axios'
 import './Books.css'
-import {useNavigate} from "react-router-dom"
 
 
 const Books =()=>{
     
     const [books, setBooks] = useState([])
     const [loading, setLoading] = useState(0)
-    const navigate = useNavigate();
-    navigate(`Books`,{replace : true})
+    
 
     setTimeout(()=> setLoading(loading=> loading+1),1800000000)
 
-    useEffect( ()=> {
-        axios.get('BOOKS_API')
-        .then(res => {
+    // useEffect( ()=> {
+    //     axios.get('BOOKS_API')
+    //     .then(res => {
           
-          res.data ? setBooks(res.data) 
-          : setBooks(books => [...books])
-        }).catch( err => {
-            console.log(err)
-        })
-    } , [loading])
+    //       res.data ? setBooks(res.data) 
+    //       : setBooks(books => [...books])
+    //     }).catch( err => {
+    //         console.log(err)
+    //     })
+    // } , [loading])
     const [savedBooks, setSavedBooks] = useState(
                                             JSON.parse(localStorage.getItem('sevedBooks')) ? 
                                             JSON.parse(localStorage.getItem('sevedBooks')):
