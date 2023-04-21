@@ -8,13 +8,15 @@ import { BsFillHouseFill } from "react-icons/bs";
 
 const NavBar = () => {
   // const [toPage,setToPage] = useState("")
-  // const navigate = useNavigate();
+  // let navigate = useNavigate();
   //   useEffect(()=> {
   //     navigate(`${process.env.PUBLIC_URL}/${toPage}`)
   //   },[toPage,navigate])
     function onClick(page){
      
-    page === "Home" ?  window.location.href=`${process.env.PUBLIC_URL}` :window.location.href=`${process.env.PUBLIC_URL}/${page}`
+      page === "Home" ? 
+          window.location.href=`${process.env.PUBLIC_URL}`:
+          window.location.href=`${process.env.PUBLIC_URL}/${page}`
     }
   return (
    

@@ -1,28 +1,30 @@
 import React from 'react';
 import BookCard from '../../components/BookCard/BookCard';
 import  { useState, useEffect } from 'react'
-import axios from 'axios'
+import {useNavigate} from "react-router-dom"
+// import axios from 'axios'
 import './Books.css'
 
 
 const Books =()=>{
-    
-    const [books, setBooks] = useState([])
+    let navigate = useNavigate();
+    navigate("/Books")
+    // const [books, setBooks] = useState([])
     const [loading, setLoading] = useState(0)
     
 
     setTimeout(()=> setLoading(loading=> loading+1),1800000000)
 
-    // useEffect( ()=> {
-    //     axios.get('BOOKS_API')
-    //     .then(res => {
+    useEffect( ()=> {
+        // axios.get('BOOKS_API')
+        // .then(res => {
           
-    //       res.data ? setBooks(res.data) 
-    //       : setBooks(books => [...books])
-    //     }).catch( err => {
-    //         console.log(err)
-    //     })
-    // } , [loading])
+        //   res.data ? setBooks(res.data) 
+        //   : setBooks(books => [...books])
+        // }).catch( err => {
+        //     console.log(err)
+        // })
+    } , [loading])
     const [savedBooks, setSavedBooks] = useState(
                                             JSON.parse(localStorage.getItem('sevedBooks')) ? 
                                             JSON.parse(localStorage.getItem('sevedBooks')):
@@ -56,11 +58,11 @@ const Books =()=>{
            
 
            <div className='cards'>
-            {books.map((val , key)=>{ 
+            {/* {books.map((val , key)=>{ 
                 return (
                     <BookCard name = {val.name} price={val.price} onClick= {()=>{onClick(val.name ,val.price)}} type={"store"}/>
                 )
-            })}
+            })} */}
             
             <BookCard name={"A"} price={"23$"} onClick= {()=>{onClick("A" ,"23$")}} type={"store"}/>
             <BookCard name={"B"} price={"28$"} onClick= {()=>{onClick("B" ,"28$")}} type={"store"}/>

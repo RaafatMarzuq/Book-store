@@ -1,8 +1,10 @@
 import {React ,useState,useEffect }from 'react';
 import BookCard from '../../components/BookCard/BookCard';
 import './Cart.css'
-
+import {useNavigate} from "react-router-dom"
 const Cart =()=>{
+      let navigate = useNavigate();
+          navigate("Book-store/Cart")
       const [storage,setStorage] =useState(JSON.parse(localStorage.getItem('sevedBooks')));
       
       // alert(JSON.parse( localStorage.getItem('sevedBooks')))
