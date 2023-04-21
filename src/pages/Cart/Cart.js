@@ -1,9 +1,6 @@
 import {React ,useState,useEffect }from 'react';
 import BookCard from '../../components/BookCard/BookCard';
 import './Cart.css'
-
-
-
 const Cart =()=>{
       const [storage,setStorage] =useState(JSON.parse(localStorage.getItem('sevedBooks')));
       
@@ -37,7 +34,7 @@ const Cart =()=>{
     return (
 
     <div className='cart'>
-      <link href='/Cart'></link>
+      
       <h1>Books in your cart</h1>
        <div>
         { storage ? storage.map((val)=>{ 

@@ -7,7 +7,6 @@ const Home =()=>{
     return (
 
         <div className='Home'> 
-        <link href='/'></link>
             <div className='text'>  
             <h1>Welcom to the online book store</h1>
             <h4>
