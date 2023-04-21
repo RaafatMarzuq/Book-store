@@ -1,14 +1,13 @@
 import React from 'react';
 import './Home.css'
-import {useNavigate} from "react-router-dom"
 
 const Home =()=>{
-    let navigate = useNavigate();
-    navigate("/")
+   
    
     return (
 
         <div className='Home'> 
+        <link href='/'></link>
             <div className='text'>  
             <h1>Welcom to the online book store</h1>
             <h4>

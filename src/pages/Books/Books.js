@@ -1,14 +1,12 @@
 import React from 'react';
 import BookCard from '../../components/BookCard/BookCard';
 import  { useState, useEffect } from 'react'
-import {useNavigate} from "react-router-dom"
 // import axios from 'axios'
 import './Books.css'
 
 
 const Books =()=>{
-    let navigate = useNavigate();
-    navigate("/Books")
+    
     // const [books, setBooks] = useState([])
     const [loading, setLoading] = useState(0)
     
@@ -52,7 +50,7 @@ const Books =()=>{
     return (
 
         <div className='books'>
-           
+           <link href='/Books'></link>
             <h1>Books in the store</h1>
            
            
