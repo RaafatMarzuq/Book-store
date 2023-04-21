@@ -4,7 +4,8 @@ import './Cart.css'
 import {useNavigate} from "react-router-dom"
 const Cart =()=>{
       let navigate = useNavigate();
-          navigate("Book-store/Cart")
+          navigate("Cart")
+          // navigate.push(`/Cart`)
       const [storage,setStorage] =useState(JSON.parse(localStorage.getItem('sevedBooks')));
       
       // alert(JSON.parse( localStorage.getItem('sevedBooks')))
