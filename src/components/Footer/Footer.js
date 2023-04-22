@@ -27,6 +27,7 @@ const Footer = () => {
         </li>
        
       </ul>
+      
     </footer>
   );
 };
