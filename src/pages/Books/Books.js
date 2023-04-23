@@ -1,5 +1,6 @@
 import React from 'react';
 import BookCard from '../../components/BookCard/BookCard';
+import books from './data';
 import  { useState, useEffect } from 'react'
 // import axios from 'axios'
 import './Books.css'
@@ -56,17 +57,13 @@ const Books =()=>{
            
 
            <div className='cards'>
-            {/* {books.map((val , key)=>{ 
+            {books.map((val , key)=>{ 
                 return (
                     <BookCard name = {val.name} price={val.price} onClick= {()=>{onClick(val.name ,val.price)}} type={"store"}/>
                 )
-            })} */}
+            })}
             
-            <BookCard name={"A"} price={"23$"} onClick= {()=>{onClick("A" ,"23$")}} type={"store"}/>
-            <BookCard name={"B"} price={"28$"} onClick= {()=>{onClick("B" ,"28$")}} type={"store"}/>
-            <BookCard name={"C"} price={"5$"} onClick= {()=>{onClick("C" ,"5$")}} type={"store"}/>
-            <BookCard name={"D"} price={"7$"} onClick= {()=>{onClick( "D","7$")}} type={"store"}/>
-            <BookCard name={"E"} price={"55$"} onClick= {()=>{onClick( "E","55$")}} type={"store"}/>
+            
            
             </div> 
         

@@ -14,9 +14,7 @@ const NavBar = () => {
     },[toPage,navigate])
     function onClick(page){
       setToPage(page)
-      // page === "Home" ? 
-          // window.location.href=`${process.env.PUBLIC_URL}`:
-          // window.location.href=`${process.env.PUBLIC_URL}/${page}`
+      
     }
   return (
    
