@@ -1,7 +1,8 @@
 import React from 'react';
-import BookCard from '../../components/BookCard/BookCard';
-import books from './data';
 import  { useState, useEffect } from 'react'
+import BookCard from '../../components/BookCard/BookCard';
+import {books} from './data';
+import BookCategory from '../../components/BooksCategory/BooksCategory';
 // import axios from 'axios'
 import './Books.css'
 
@@ -10,20 +11,9 @@ const Books =()=>{
     
     // const [books, setBooks] = useState([])
     const [loading, setLoading] = useState(0)
-    
+    const Category = localStorage.getItem("Category")
 
     setTimeout(()=> setLoading(loading=> loading+1),1800000000)
-
-    useEffect( ()=> {
-        // axios.get('BOOKS_API')
-        // .then(res => {
-          
-        //   res.data ? setBooks(res.data) 
-        //   : setBooks(books => [...books])
-        // }).catch( err => {
-        //     console.log(err)
-        // })
-    } , [loading])
     const [savedBooks, setSavedBooks] = useState(
                                             JSON.parse(localStorage.getItem('sevedBooks')) ? 
                                             JSON.parse(localStorage.getItem('sevedBooks')):
@@ -32,7 +22,7 @@ const Books =()=>{
    
     useEffect(()=>{
         localStorage.setItem('sevedBooks',JSON.stringify(savedBooks));
-    },[flag,savedBooks])
+    },[flag,savedBooks,loading])
    
     function onClick(name , price){
             const book ={
@@ -52,19 +42,25 @@ const Books =()=>{
 
         <div className='books'>
            
-            <h1>Books in the store</h1>
-           
-           
-
+         <h1>Books in the store</h1>
+         <div>
+            <BookCategory/>
+             
+         </div>
+        
            <div className='cards'>
-            {books.map((val , key)=>{ 
+            
+            {
+            books.map((val , key)=>{ 
                 return (
-                    <BookCard name = {val.name} price={val.price} onClick= {()=>{onClick(val.name ,val.price)}} type={"store"}/>
+                    <BookCard 
+                    name = {val.name}
+                    price={val.price} 
+                    Category={val.category}
+                    onClick= {()=>{onClick(val.name ,val.price)}} 
+                    type={"store"}/>
                 )
             })}
-            
-            
-           
             </div> 
         
         </div>

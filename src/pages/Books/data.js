@@ -1,4 +1,4 @@
-const books = [
+export const books = [
     {
       id: 1,
       name: "The Catcher in the Rye",
@@ -128,6 +128,8 @@ const books = [
     }
       ];
       
+ 
   
-     
-  export default books
+
+  
+ 
