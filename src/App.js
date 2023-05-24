@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/NavBar';
 import Books from './pages/Books/Books';
 import Home from './pages/Home/Home';
 import Cart from './pages/Cart/Cart';
+import Order from './pages/Order/Order';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
           <Routes>
               <Route  path='/'  element={<Home/>}  />
               <Route   path='Books'  element={<Books/>}  />
-              <Route  path='Cart'  element={<Cart/>}  />     
+              <Route  path='Cart'  element={<Cart/>}  />  
+              <Route  path='Cart/Oreder'  element={<Order/>}  />   
           </Routes>
       <Footer/>
       </BrowserRouter> 

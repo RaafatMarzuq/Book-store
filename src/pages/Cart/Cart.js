@@ -47,6 +47,7 @@ const Cart =()=>{
         <BookCard type={"cart"}/> */}
        </div>
         
+        
     </div>
     )
 }
